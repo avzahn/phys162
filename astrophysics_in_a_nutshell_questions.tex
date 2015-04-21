@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{textcomp}
+
+
+\usepackage{gensymb}
+
+\begin{document}
+
+\newcommand{\mpc}{\mathrm{Mpc}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\solarmass}{M_{\odot}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\is}{\sec^{-1}}
+\newcommand{\ikm}{\km^{-1}}
+\newcommand{\impc}{\mpc^{-1}}
+
+\newcommand{\reh}{r_\mathrm{eh}}
+\newcommand{\rh}{t_\mathrm{h}}
+\newcommand{\el}{\epsilon_\Lambda}
+
+\setcounter{section}{7}
+
+\section*{Chapter 7}
+
+\subsection{} %1
+
+Assume that there is a constant ratio between stellar mass and light in the disks of spiral galaxies, and that disks have a constant surface brightness. Use the scaling with radius \(r\), of the stellar mass within such a radius, and the scaling of circular velocity, \(v_c\), with enclosed mass (ignoring dark matter), to ``explain" the Tully-Fisher relation, \(L \propto v_c^4\). The fourth-power dependence is indeed what is observed at infrared wavelengths, at which light traces stellar mass relatively well. In reality, however, dark matter cannot be ignored, and spiral disks do not have a constant surface brightness.
+
+\subsection{} %2
+
+Measurements of the radial recession velocities of five galaxies in a cluster give velocities of 9700, 8600, 8200, and \(10^4\) km/s. What is the distance to the cluster if the Hubble parameter is \(H_0 = 70 \mathrm{km}\mathrm{s}^{-1}\mathrm{Mpc}^{-1}\)? Estimate, to an order of magnitude, the mass of the cluster if every galaxy is projected roughly half a degree from the cluster center.
+
+\subsection{} %3
+
+In the Sunyaev-Zeldovich effect, photons from the cosmic microwave background radiation are Comption scattered by hot electrons in a cluster along the line of sight. Assume 0.001 of the photons are scattered, and the mass of the cluster is \(2 \times 10^{14} \solarmass\), of which 15\% is in the hot gas (fully ionized hydrogen).
+
+\textbf{a.} Use the Thomson cross section to represent the cross section for Compton scattering, and assume the cluster is spherical and of constant density, to find the diameter of the cluster (assume the photons pass through one diameter).
+
+\textbf{b.} If the angular diameter of the cluster is \(1 \degree\), what is its distance?
+
+\textbf{c.} If the cluster velocity of recession is 8400 \(\km\is\), what is the Hubble parameter, in units of of \(\km\is\impc\)?
+
+\setcounter{section}{8}
+\setcounter{subsection}{0}
+
+\section*{Chapter 8}
+
+\subsection{} %1
+
+Show that the current proper distance to our particle horizon, defined as the most distant place we can see (in principle), for a matter dominated \(k=0\) universe with no cosmological constant, is \(r_h a_0 = 3ct_0\), where \(r_h\) is the comoving radial coordinate of the particle horizon, \(a_0\) is the scale factor today, and \(t_0\) is the present age of the universe. Thus, more and more distant regions of the universe ``enter" the horizon and become visible as time progresses. Why is the answer different from the naively expected result, \(ct_0\)?
+
+\textit{Hint:} Light moves along ``null geodesics", defined as paths along which \(ds = 0\), and therefore in the FRW metric, light reaching us from a comoving coordinate \(r\) will obey
+\[0 = c^2dt^2-a(t)^2\frac{dr^2}{1-kr^2}.
+\]
+Replace \(a(t)\) with \( (t/t_0)^{2/3}a_0\) appropriate for this cosmology, separate the variables, and integrate from \(r=0\) to \(r_h\) and from \(t=0\) (the Big Bang) to \(t_0\) (today).
+
+\subsection{} %2
+
+For a \(k=0\) universe with \(\Omega_\Lambda = 1\), that at \(t=0\) already has a scale \(a_0\), find the comoving radial coordinate, \(\rh\), of galaxies that will be on the particle horizon (see 8.1) at a time \(t\) in the future. Show that in this case, \(\rh\) approaches a constant, \(c/(H_0a_0)\) and therefore galaxies beyond this \(\rh\) will never become visible.
+
+\textit{Hint:} Proceed as in 8.1, but now with \(a(t) = a_0e^{H_0t}\). Show why this \(a(t)\) is an exact solution of the Friedmann equations for the cosmological parameters above.
+
+\subsection{} %3
+
+\textbf{a.} For the same cosmology as in 8.2 (\(k=0\), \(\Omega_\Lambda = 1\)), find the comoving radius \(\reh\) of galaxies that will be on our \textbf{event horizon} at a time \(t\) in the future, i.e., galaxies with which we will be unable to communicate. In other words, light signals sent by us at time \(t\) will never reach those galaxies, light signals sent out by those galaxies at time \(t\) will never reach us, and therefore we will never see those galaxies as they appeared at time \(t\) and thereafter. Show that, in this case, \(\reh\) shrinks exponentially, and we thus lose the possibility of communication with more and more of our neighbors.
+
+\textbf{b.} Assume that \(H_0 = 70\, \km\is\) and find, for such a universe (which approximates the actual world we live in), within how many years will the galaxies in the Virgo cluster (distance  \(\sim 15\, \mpc\)) reach the event horizon.
+
+\textit{Hint:} Proceed as in 8.2, but integrate from \(a_0\) to \(\reh\) and from \(t\) (future emission time)  to \(t = \infty\) (the photons never reach us). Then equate \(\reh\) to the comoving radius of Virgo, \( 15\,\mpc/a_0\)
+
+\subsection{} %4
+
+Repeat the derivation of the third Friedmann equation, from the first and second Friedmann equations, but in the presence of a cosmological constant (Eqns 8.95 and 8.96), and show that this equation is unchanged. Note that, in this derivation, \(\rho\) and \(P\) still refer to the density and pressure associated with normal matter and radiation, rather than with the cosmological constant term, which cancels out.
+
+\subsection{} %5
+
+Show that the equation of state associated with the energy density of the cosmological constant is \(P = -\epsilon_\Lambda\), with a negative pressure. Two different ways to do this are as follows. \newline
+
+\textbf{a.} Invoke energy conservation and follow the derivation of Eqns 8.88-8.94 to argue that Eq 8.94 holds  also for the ``dark energy" density component \(\epsilon_\Lambda\), alone, i.e.,
+
+\[\dot{\epsilon}_\Lambda = -3\frac{\dot{a}}{a}(\epsilon_\Lambda + P_\Lambda)
+\]
+
+The required result follows from noting \(\Lambda\) is a constant. \newline
+
+\textbf{b.} Rewrite the Friedmann equations plus cosmological constant (Eqns 8.95, 8.96, but absorb the \(\Lambda/3\) term, i.e., in Eq 8.95, define an energy density \(\epsilon_\Lambda\) (Eq 8.88) such that \(\rho\) is replaced by \(\rho + \el/c^2\). In Eq 8.96, replace  \(\rho c^2 + 3P\) with \(\rho c^2 + \el + 3(P+P_\Lambda) \) Then eliminate \(\Lambda\) from the two defining equations of \(\el\) and \(P_\Lambda\) to obtain the required dark energy equation of state.
+
+\end{document}
