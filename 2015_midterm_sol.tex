@@ -19,16 +19,17 @@
 \newcommand{\rh}{t_\mathrm{h}}
 \newcommand{\el}{\epsilon_\Lambda}
 
-\section*{1}
+\section{Cosmological Questions: Part 1}
 
 \subsection*{a}
 
-You are getting taller, though very slowly. Consider that a tall person has a height of about two meters, or roughly \(d = 6 \times 10^{-23} \, \mpc\). The rate of height gain for this person is just \(H_0d = (70 \, \km \, \is \, \impc)(6 \times 10^{-23} \, \mpc) = 4.2 \times 10^{-21} \,\km\,\is\), which is a height gain of about one part in a trillion trillion per second.
+Electromagnetic forces hold you together as the space between your atoms expands.
+
+Even if you weren't electromagnetically bound, you would become taller at a rate too slow to measure. Consider that a tall person has a height of about two meters, or roughly \(d = 6 \times 10^{-23} \, \mpc\). The rate of height gain for this person is just \(H_0d = (70 \, \km \, \is \, \impc)(6 \times 10^{-23} \, \mpc) = 4.2 \times 10^{-21} \,\km\,\is\), which is a height gain of about one part in a trillion trillion per second.
 
 \subsection*{b}
 
-This is a similar idea to (a): over Earth-Sun distances, cosmological expansion is negligibly small.
-
+This is a similar idea to (a): over Earth-Sun distances, cosmological expansion is negligibly small, and the solar system forms a graviationally bound object.
 \subsection*{c}
 
 Astronomical observations appear to support a homogeneous and isotropic universe over \(100 \,\mpc\) scales. On these distance scales, there don't appear to be any special points in the universe, including our own location.
@@ -39,15 +40,15 @@ The expansion of the universe refers to the increase in distances between any tw
 
 \subsection*{e}
 
-Nowhere, or everywhere, depending on semantics. Our current position in the universe was once colocated with every other point in the universe at the time of the big bang. Again, it's important to understand that the big bang is not a classical explosion. Objects are not receding from each other because they were ejected from a central point, rather, all space is expanding.
+Nowhere, or everywhere, depending on semantics. Our current position in the universe was once colocated with every other point in the universe at the time of the big bang. Again, it's important to understand that the big bang is not a classical explosion. Objects are not receding from each other because they were ejected from a central point, rather, all space is expanding. A center of the universe would also violate the cosmological principle.
 
 
-\section*{2}
+\section{Cosmological Questions: Part 2}
 
 Discussion starts on Ryden page 58. The derivation itself is in equations 4.3 to 4.11
 
 
-\section*{3}
+\section{Olbers' Paradox}
 
 \subsection*{a}
 
@@ -57,8 +58,38 @@ The paradox is resolved by noting that all of the three assumptions are varying 
 
 \subsection*{b}
 
-Suppose temporarily the arrow can magically pass through objects. We want to know how many trees the arrow, on average, is going to pass through per unit distance traveled along a line.
 
-Let the linear distance traveled be \(r\). Knowing that the arrow only passes through a tree if the tree's center is a distance \(R\) from the arrow, we can find the region \(S\) such that if 
+The mean free path formula is
+
+\[r = \frac{1}{n\sigma}
+\]
+
+
+where \(n\) is the density of objects to collide with and \(\sigma\) is the collision cross section. The problem gives \(n = \Sigma = .0005 \,\mathrm{m}^{-2}\) and a tree radius of \(R\). Since this is a two dimensional problem, \(\sigma = 2R\) instead of \(\pi R^2\). The answer is then
+
+\[\boxed{r = \frac{1}{2R\Sigma}= 100 \,\mathrm{meters}}
+\]
+\newline
+We can derive this fairly easily. Suppose temporarily the arrow can magically pass through objects. We want to know how many trees the arrow, on average, is going to pass through per unit distance traveled along a line.
+
+Let the linear distance traveled be \(r\). Knowing that the arrow only passes through a tree if the tree's center is a distance \(R\) from the arrow, we can find the region \(S\) such that if a tree's center is within S, the arrow must pass through the tree. \(S\) will be the union of two components. One will be a rectangle of area \(2Rr\), and the other will be a semicircle of area \(\frac{1}{2}\pi R^2\). Since the area of the semicircle doesn't grow with \(r\), we usually discard this as negligible, and take the area, \(A\), of \(S\) to be \(2Rr\).
+
+How many trees have centers that occur within \(S\)? We are given that the number of trees per unit area is \(\Sigma\), so that we can say there are, on average, \(A\Sigma\) trees to pass through.
+
+Now our arrow can't pass through objects, so on average it only travels as far as \(r\) makes the expectation number of trees encountered one. This gives
+
+\begin{align*}
+A\Sigma &= 1 \\
+&= 2Rr\Sigma \\
+&\implies r = \frac{1}{2R\Sigma}
+\end{align*}
+
+\section{2D Universe}
+
+\subsection*{a}
+
+\section{Different Universes}
+
+\section{Redshift and Scale Factor}
 
 \end{document}
