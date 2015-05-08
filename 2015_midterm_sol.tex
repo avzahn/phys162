@@ -40,7 +40,7 @@ The expansion of the universe refers to the increase in distances between any tw
 
 \subsection*{e}
 
-Nowhere, or everywhere, depending on semantics. Our current position in the universe was once colocated with every other point in the universe at the time of the big bang. Again, it's important to understand that the big bang is not a classical explosion. Objects are not receding from each other because they were ejected from a central point, rather, all space is expanding. A center of the universe would also violate the cosmological principle.
+Nowhere, or everywhere, depending on semantics. Our current position in the universe was once colocated with every other point in the universe at the time of the big bang. Again, it's important to understand that the big bang is not a classical explosion. Objects are not receding from each other because they were ejected from a central point, rather, all space is expanding. A unique center of the universe would also violate the cosmological principle.
 
 
 \section{Cosmological Questions: Part 2}
@@ -54,7 +54,7 @@ Discussion starts on Ryden page 58. The derivation itself is in equations 4.3 to
 
 Olber's paradox is as follows: assuming a universe with an infinite horizon, a uniform density of stars per volume, and homogeneous stellar luminosities, one expects to see an infinitely bright sky, which is clearly not the case.
 
-The paradox is resolved by noting that all of the three assumptions are varying degrees of incorrect. A more in depth discussion is in Ryden pages 7-11.
+The paradox is resolved by noting that all of the three assumptions are varying degrees of incorrect. A more in depth discussion is in Ryden pages 7-11. If you don't have a copy of Ryden, it conveniently happens to be the first hit on a search for ``Ryden pdf"
 
 \subsection*{b}
 
@@ -76,7 +76,7 @@ Let the linear distance traveled be \(r\). Knowing that the arrow only passes th
 
 How many trees have centers that occur within \(S\)? We are given that the number of trees per unit area is \(\Sigma\), so that we can say there are, on average, \(A\Sigma\) trees to pass through.
 
-Now our arrow can't pass through objects, so on average it only travels as far as \(r\) makes the expectation number of trees encountered one. This gives
+Our arrow actually can't pass through objects though, so on average it only travels as far as \(r\) makes the expectation number of trees encountered one. This gives
 
 \begin{align*}
 A\Sigma &= 1 \\
@@ -86,10 +86,43 @@ A\Sigma &= 1 \\
 
 \section{2D Universe}
 
+There was some confusion about the wording of this problem. The intended problem setup is that you are standing on the surface of a sphere, and you are trying to find the angle \(d\theta\) between two great circles of the sphere that intersect exactly beneath you, and also just touch the edges of a small object of \textit{fixed} width \(ds\).
+
+Full credit was given in part b for being consistent with whatever you did in part a, and half credit was given in part a for correctly working it out in whatever interpretation you went with, provided I could figure out what that interpretation was.
+
 \subsection*{a}
+
+The key to this question is that the formula for the metric on the surface of a sphere was given in the course:
+
+\[ ds^2 = dr^2+R^2d\theta^2\sin^2\frac{r}{R}
+\]
+
+It's important to realize that this formula is in terms of angles and distances in a spherical geometry. The coordinate system used is \textit{not euclidean}, and works like this:
+
+Choose an arbitrary point on the sphere's surface and call it \(p_0\). We are going to try to uniquely specify the position of an arbitrary other point on the surface, \(p_1\) relative to \(p_0\).
+
+Let's connect 
+
+
+
+\(r\) is the distance along a geodesic, which in our case is a great circle of the sphere. \(d\theta\) is the angle between great circles that intersect   
+
+\subsection*{b}
+
+
 
 \section{Different Universes}
 
 \section{Redshift and Scale Factor}
+
+\subsection*{a}
+
+Redshift is the phenomenon where the wavelength of light measured by an observer moving away from the point of emission is longer than the wavelength that would have been measured by an observer comoving with emission event. Since many common atoms have nearly discrete emission and absorption spectra, we can measure their spectra in a comoving lab on earth, and then look for shifted versions of them in the spectra of astronomical objects like galaxies.
+
+\subsection*{b}
+
+The recession velocity that every objects measures from any other distant object is \(v=H_0d\), where \(d\) is the separation distance and \(H_0\) is the hubble constant.
+
+The Hubble parameter \(H(t)\) is the instantaneous ratio of the scale factor's time derivative and the scale factor, \(\dot{a}(t)/a(t)\). The Hubble constant is just \(H(t_0)\), where \(t_0\) is the present time. By convention, we usually take \(a(t_0)=1\) so that \(H_0 = \dot{a}(t_0)\).
 
 \end{document}
