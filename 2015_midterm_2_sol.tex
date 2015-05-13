@@ -1,0 +1,182 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{textcomp}
+
+
+\usepackage{gensymb}
+
+\begin{document}
+
+\newcommand{\mpc}{\mathrm{Mpc}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\solarmass}{M_{\odot}}
+\newcommand{\s}{\mathrm{sec}}
+\newcommand{\is}{\sec^{-1}}
+\newcommand{\ikm}{\km^{-1}}
+\newcommand{\impc}{\mpc^{-1}}
+
+\newcommand{\reh}{r_\mathrm{eh}}
+\newcommand{\rh}{t_\mathrm{h}}
+\newcommand{\el}{\epsilon_\Lambda}
+
+\title{Midterm 2 Solutions}
+\author{Alex Zahn}
+\maketitle
+
+\section{Cosmological Questions: Part 1}
+
+\subsection*{a}
+
+\noindent (1) The existence of a horizon distance on the Earth's surface. For an observer and object at some given altitudes, there exists a distance between them such that surface of the Earth itself occludes the object. \\
+ 
+\noindent(2) We've sent spacecraft around Earth, and taken pictures. Even better, we've actually measured the density and elevation of the surface from satellites. For anyone who's interested in that sort of thing, check out JPL's GRAIL mission online. \\
+
+\noindent(3) The zenith position of the sun varies with latitude. At a given instant in time, your angle to the sun would not have positional dependence on a flat Earth. \\
+
+\noindent (4) People have circumnavigated the Earth, and in fact returned to their starting positions without reversing their direction. \\
+
+\noindent (5) Anything else that sounds reasonable. Bonus points for anyone who visits the Flat Earth Society website (theflatearthsociety.org) and can prove or disprove its satirical nature.
+
+\subsection{b and c}
+
+Again, anything reasonable goes. It was not required to construct a disproof of geocentrism, especially since the problem doesn't specify what assumptions were allowable or not.  Possible responses might have mentioned gravitational arguments, retrograde motion of the planets, stellar parallax, inconsistency between solar and sidereal time, or the observation of stellar aberration.
+
+Some people were interested in hearing about the last two, so I can elaborate a little on them.
+
+\subsubsection*{Sidereal vs Solar Time}
+
+It was noticed even by ancient astronomers that stars executed an approximately closed path across the sky with the same period of approximately one day, ignoring the slow drift of the trajectories across the sky over the course of a year. The value of the period of the daily trajectory is defined as the sidereal day. While there are lots of effects that go in to making the stars' trajectories aperiodic and some resulting subtleties in defining the sidereal day precisely, we can say for our purposes that a sidereal day is about 23 hours and 56 minutes.
+
+Similarly, we can measure the period of the sun's motion across the sky. It turns out that the period isn't exactly the same every day for various reasons that aren't relevant to this question, but on average a solar day is twenty four hours long, to within less than twenty seconds.
+
+So there's a discrepancy between the solar day and the sidereal day. In a geocentric universe, we can resolve this by saying that the sun orbits the earth more slowly than do the stars. In a non-geocentric universe, we resolve this by noting that if Earth is rotating while orbiting the sun, the orbital period will change the apparent motion of the sun.
+
+We can see how rotational and orbital motion could interact to change the apparent motion of an object with a couple examples. First, imagine that we are orbiting the sun but not rotating. Then distant stars would appear approximately fixed in the sky, but the sun would trace a path across the sky that loops back on itself once per year. 
+
+Second, consider the Earth-Moon system. The Moon is tidally locked to the Earth; it rotates precisely so that it always shows the same face to Earth as it orbits it. From the lunar surface, Earth appears fixed, while the stars do not.
+
+So far though, the phenomenon is explainable in a geocentric universe. This enters into a disproof of geocentrism though when the theory can't simultaneously resolve this phenomenon and another one without contradiction.
+
+\subsubsection*{Stellar Aberration}
+
+An interesting result from special relativity is that the motion of an observer deflects the incidence angle of incoming light that observer measures, but that the motion of the source of the light does not deflect the light the observer sees. This deflection is called aberration, and it turns our that the aberration of starlight follows exactly the yearly patterns expected in a heliocentric solar system.
+
+\subsection*{d}
+
+We can find the masses of the planets from Newtonian gravity and measurements of their orbital periods.
+
+\subsection*{e}
+
+Quarks are believed to be governed by a theory called Quantum Chromodynamics. The masses of different quarks can be inferred from the behavior of quark jets detected and produced in particle accelerator experiments. Alternatively, the species of nuclei produced during Big Bang Nucleosynthesis is dependent on the quark masses, and the abundances of different nuclei throughout the universe can be measured.
+
+\section{Cosmological Questions: Part 2}
+
+\subsection*{a}
+
+Again, anything reasonable goes, but the two most important pieces of evidence are Hubble's law and the existence of the CMB.
+
+\subsection*{b}
+
+It can't. We can see this by substituting \(\Lambda = \epsilon = 0\) into the Friedmann Equation, which gives
+
+\[ \dot{a}^2 = -\frac{\kappa c^2}{R_0^2}
+\] 
+
+So we need to make sure that \(\kappa\) is either zero or negative to prevent \(\dot{a}\) from becoming imaginary.
+
+\subsection*{c}
+
+The critical density \(\varepsilon_c\) is the value of \(\varepsilon\), given the value of the Hubble parameter, that renders \(\kappa\) necessarily zero, resulting in a flat universe.
+
+The form of \(\varepsilon_c\) is 
+
+\[ \varepsilon_c = \frac{3c^2}{8\pi G}H(t)^2
+\]
+
+In the present day, this is estimated to be \(5200 \pm 1000 \, \mathrm{MeV}\,\mathrm{m}^{-3}\) 
+
+\subsection*{d}
+
+The acceleration equation is
+
+\[ \frac{\ddot{a}}{a} = \frac{-4\pi G}{3c^2}(\varepsilon + 3P) + \frac{\Lambda}{3}
+\]
+
+where \(a\) is the scale factor, \(G\) is the gravitational constant, \(\varepsilon\) is the energy density, \(P\) is the pressure, and \(\Lambda\) is the cosmological constant.
+
+\section{Acceleration Equation}
+
+The fluid equation is
+
+\[\dot{\varepsilon} + 3\frac{\dot{a}}{a}(\varepsilon +P) = 0
+\]
+
+Which becomes after subsituting \(P=w\varepsilon\),
+
+\[ \dot{\varepsilon} + 3\frac{\dot{a}}{a}(1+w)\varepsilon = 0
+\]
+
+The Friedmann equation is
+
+\[ \left(\frac{\dot{a}}{a}\right)^2 = \frac{8\pi G}{3c^2}\varepsilon - \frac{\kappa c^2}{R_0^2 a^2} +\frac{\Lambda}{3}
+\]
+
+The question asks us to consider a flat \(\kappa = 0\) universe with only one energy species, which is implied not to be from the cosmological constant, which would have \(w = -1\).  So we take \(\Lambda = 0\) and multiply through by \(a^2\) to get
+
+\[\dot{a}^2 = \frac{8 \pi G}{3c^2}a^2\varepsilon
+\]
+
+After differentiating with respect to time, this becomes
+
+\[ 2\dot{a}\ddot{a} = \frac{8 \pi G}{3c^2} (2a\dot{a}\varepsilon + a^2\dot{\varepsilon})
+\]
+
+Now we can insert the expression for \(\dot{\varepsilon}\) from the fluid equation to get
+
+\[ 2\dot{a}\ddot{a} = \frac{8 \pi G}{3c^2} \left( 2a\dot{a}\varepsilon + a^2\left(-3\frac{\dot{a}}{a}(1+w)\varepsilon\right) \right)
+\]
+
+which simplifies to 
+
+\[ \boxed{ \frac{\ddot{a}}{a} = -\frac{4\pi G}{3c^2}(1+3w)\varepsilon }
+\]
+
+\section{Hubble distances}
+
+We get a distance to each galaxy by diving the recession velocities by \(H_0\). The distance to the cluster could be taken to be the mean distance.
+
+\section{Distances in a flat, matter dominated universe}
+
+Taking \(k=0\) and \(a = a_0\left(\frac{t}{t_0}\right)^{2/3}\) as directed, the condition for having a null geodesic from the hint becomes
+
+\[ c^2dt^2 -  a_0^2\left(\frac{t}{t_0}\right)^{4/3}dr^2 = 0
+\]
+
+Rearranging this,
+
+\[\frac{c}{a_0}\left(\frac{t}{t_0}\right)^{-2/3}dt = dr
+\]
+
+Integrating both sides from \(t=0\) to \(t=t_0\) and \(r=0\) to \(r=r_h\),
+
+\[\frac{ct_0^{2/3}}{\sqrt{a_0}}\int\limits_0^{t_0}t^{-2/3}dt = \int\limits_0^{r_h}dr
+\]
+
+which results in 
+
+\[ \frac{3ct_0^{2/3}}{a_0}t_0^{1/3} = \frac{3ct_0}{a}= r_h
+\]
+
+We could also get this result by using Ryden's formula for the proper distance to a lightsource,
+
+\[ \int\limits_{t_e}^{t_0}\frac{cdt}{a(t)}
+\]
+
+and then taking the time of emission to be as early as possible \(t_e = 0\) and substituting the given time dependence for \(a\).
+
+\section{Distances in a flat, dark energy dominated universe}
+
+Notice that the universe we've described here is expanding, and the distance to a light source is always increasing. Any light that does reach us from the beginning of the universe is therefore from a source that is presently further away than \(ct_0\).
+
+
+\end{document}
