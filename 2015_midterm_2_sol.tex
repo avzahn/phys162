@@ -167,16 +167,60 @@ which results in
 \[ \frac{3ct_0^{2/3}}{a_0}t_0^{1/3} = \frac{3ct_0}{a}= r_h
 \]
 
-We could also get this result by using Ryden's formula for the proper distance to a lightsource,
+We could also get this result by using going straight Ryden's formula for the proper distance to a lightsource (which we actually ended up deriving in passing just now),
 
 \[ \int\limits_{t_e}^{t_0}\frac{cdt}{a(t)}
 \]
 
 and then taking the time of emission to be as early as possible \(t_e = 0\) and substituting the given time dependence for \(a\).
 
-\section{Distances in a flat, dark energy dominated universe}
 
 Notice that the universe we've described here is expanding, and the distance to a light source is always increasing. Any light that does reach us from the beginning of the universe is therefore from a source that is presently further away than \(ct_0\).
+
+\section{Distances in a flat, dark energy dominated universe}
+
+Again taking \(k=0\) and imposing that we travel along a null geodesic,
+
+\begin{align*}
+cdt&=a(t)dr \\
+\int\limits_0^{t_0}\frac{cdt}{a(t)} &= \int\limits_0^{r_h}dr = r_h
+\end{align*}
+
+Substituting \(a(t) = a_0e^{H_0t}\) turns the integral into
+
+\[ \frac{c}{a_0}\int\limits_0^{t_0}e^{-H_0t}dt = \boxed{\frac{c}{a_0H_0}}
+\]
+
+\section{Equations of State}
+
+All of these assume a single component universe. What this means for the problem is that we can take \(\varepsilon +P = (1+w)\varepsilon\), and then get a differential equation for \(\varepsilon\) with respect to \(a\) directly from the fluid equation.
+
+Recall again that the fluid equation is now
+
+\[\dot{\varepsilon} = -3\frac{\dot{a}}{a}(1+w)\varepsilon
+\]
+
+If we divide both sides by \(\dot{a}\), we end up with \(\dot{\varepsilon}/\dot{a}\) on the left, which is necessarily equivalent to \(\frac{d\varepsilon}{da}\). The \(\dot{a}\) dependence on the right is now gone, and we are left with a differential equation for \(\varepsilon\) in terms of \(a\):
+
+\[\frac{d\varepsilon}{da} = -\frac{3}{a}(1+w)\varepsilon
+\]
+
+Thankfully this is a separable equation, and we can rearrange it to keep all of the \(\varepsilon\) and \(a\) dependence on different sides, and then integrate:
+
+\begin{align*}
+&\frac{d\varepsilon}{\varepsilon} = -\frac{3}{a}(1+w)da \\
+&\implies \int\frac{d\varepsilon}{\varepsilon} = -3(1+w)\int \frac{da}{a} \\
+&\implies \log\varepsilon = -3(1+w)\log a + C \\
+&\implies \varepsilon = e^Ca^{-3(1+w)} \\
+&\equiv \boxed{\varepsilon_0a^{-3(1+w)}} 
+\end{align*}
+
+All that's left to do is substitute \(w = 0\) for matter, 1/3 for radiation, and -1 for dark energy.
+
+For part d, the best thing to do is to have an approximate plot of \(\varepsilon\) vs \(a\), but anything that conveys the qualitative dependence of \(\varepsilon\) on \(a\) that you found in the above is fine.
+
+
+
 
 
 \end{document}
