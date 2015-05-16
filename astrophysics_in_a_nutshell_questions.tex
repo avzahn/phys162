@@ -116,7 +116,65 @@ Assume an all hydrogen composition, \(\Omega_B = .04\), and \(H_0 = 70\,\km\is\i
 
 \textit{Hint}: Transparency to electron scattering can be defined in several ways. One definition is to require that the rate at which is a photon is scattered by electrons, \(n_e\sigma_T c\), is lower than the expansion rate of the universe at that time, \(H(t)\). In other words, the time a photon takes to traverse its mean free path is longer than the age of universe at that time. We say that photons are decoupled from free electrons at this point.
 
-Express the electron density \(n_e\) at a given \(z\) by starting with the current baryon number density, \(\Omega_m \rho_c /\) 
+Express the electron density \(n_e\) at a given \(z\) by starting with the current baryon number density, \(\Omega_m \rho_c /m_p\), expressing \(\rho_c\) in terms of \(H_0\), and increasing the density in the past as \((1+z)^3\). Similarly, write \(H\) in terms of \(H_0\) and \(1+z\) (recall that \( 1+z = a_0/a\), and in this cosmology, \(a \propto t^{2/3}\) and \(H \propto t^{-1}\)). Show that decoupling would have occurred at 
 
+\[ 1+z = \left( \frac{8\pi G m_p}{3 \Omega_m H_0 \sigma_T c} \right)^{2/3}
+\]
+
+and calculate the value of this redshift. Alternatively, we can find the redshift of the surface of last scattering, from which a typical photon would have reached us without further scatters. The number of scatters on electrons that photon undergoes as it travels from redshift \(z\) to redshift zero is
+
+\[ \int\limits_0^{l(z)} n_e(z)\sigma_t dl
+\]
+
+Express \(n_e\), above, in terms of \(\Omega_m\), \(H_0\), and \(1+z\), replace \(dl\) with \( c(dt/dz)dz \), using again \(a \propto t^{2/3}\) to write \(dt/dz\) in terms of \(H_0\) and \(1+z\). Equate the integral to 1, perform the integration, show that the last scattering surface redshift would be
+
+\[1+z = \left( \frac{4\pi G m_p}{\Omega_m H_0 \sigma_T c}\right)^{2/3}
+\]
+
+and evaluate it.
+
+\subsection{} % 3
+
+Show that the angular diameter distance for a flat universe out to redshift \(z\),
+
+\[ d_A = 3ct_0\left( (1+z)^{-1} - (1-z)^{-3/2} \right)
+\]
+
+has a maximum with respect to redshift, and find that redshift.
+
+The angular size on the sky of an object with physical size \(d\) is \(\theta=d/d_A\). What is the implication of the maximum of \(d_A\) for the appearance of objects at redshifts beyond the one you found? Not that this peculiar behavior is simply the result of light travel time out to different distances in an expanding universe; an object at high redshift may have been closer to us at the time of emission than an object of the same size at a lower redshift, despite the fact that the high-redshift object is currently more distant.
+
+
+\subsection{} %4
+
+(a) Consider the energy flux of photons from a source with bolometric luminosity \(L\) and with proper distance a\(a_0r\). The photons will be spread over an area \(4\pi a_0^2r^2\). Explain why the observed energy flux will be
+
+\[ f = \frac{L}{4\pi a_0^2r^2(1+z)^2}
+\]
+
+(b) Find \(d_L\) for a flat universe with \(\Lambda=0\). Plot, for this model, the Hubble diagram ( flux vs \(z\) for an object of constant luminosity).
+
+\subsection{} % 5
+
+Show that in a Euclidean, non-expanding, universe, the surface brightness of an object (its observed flux per unit solid angle) does not change with distance. Then show that in an expanding FRW universe, the ratio between luminosity distance (see problem 4) and the angular diameter distance to an object is always \((1+z)^2\).
+
+Use this to prove that, in the latter universe, surface brightness dims with increasing redshift as \( (1+z)^{-4}\). This effect makes extended objects, such as galaxies, increasingly difficult to detect at high redshift.
+
+\subsection{} % 6
+
+An object at proper distance \(a_0r\) splits into two halves. Each piece moves relative to the other, perpendicular to our line of sight, at a constant, nonrelativistic velocity \(v\ll c\). What is the angular rate of separation, or ``proper motion" between the two objects?
+
+\textit{Hint:} Recall that we are measuring an angle, and so require the angular diameter distance, but we are also measuring a rate, which is affected by cosmological time dilation. You can now see why \(a_0r\) is called the proper-motion distance.
+
+\subsection{} % 7
+
+Use the Friedmann equation with a nonzero \(\Lambda\) to show that, in a flat, matter dominated universe, the proper distance is
+
+\[ a_0r = \int \frac{cdz}{H_0\sqrt{\Omega_{m,0}(1+z)^3+\Omega_{\Lambda,0}}}
+\]
+
+Use a computer to evaluate this integral numerically with \(\Omega_{\Lambda,0} = 0.7\) and \(\Omega_{m,0}=0.3\) for values of \(z\) between 0 and 2. Plot the Hubble diagram (flux vs \(z\)) from an object of constant luminosity, in this case, and compare to the curve describing a constant \(\Omega_m = 1\) (see problem 4). You can now see how the Hubble diagram of type-1a supernovae can distinguish among cosmological models.
+
+\textit{Hint:} Set \(\kappa=0\) in the Friedmann equation and replace \(\rho\) by \(\rho_0a_0^3/a^3\), divide both sides by \(H_0^2\), and substitute the dimensionless parameters \(\Omega_{m,0}\) and \(\Omega_{\Lambda,0}\). Change variables from \(a\) to \(z\) using \( 1+z = a_0/a\) and separate the variables \(z\) and \(t\). Finally, use the FRW metric with \(\kappa=0\) to get \(a_0r = \int(1+z)cdt\), to obtain the result. 
 
 \end{document}
