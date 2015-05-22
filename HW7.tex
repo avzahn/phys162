@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{textcomp}
+
+
+\usepackage{gensymb}
+
+\begin{document}
+
+\newcommand{\mpc}{\mathrm{Mpc}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\solarmass}{M_{\odot}}
+\newcommand{\s}{\mathrm{sec}}
+\newcommand{\is}{\sec^{-1}}
+\newcommand{\ikm}{\km^{-1}}
+\newcommand{\impc}{\mpc^{-1}}
+
+\newcommand{\reh}{r_\mathrm{eh}}
+\newcommand{\rh}{t_\mathrm{h}}
+\newcommand{\el}{\epsilon_\Lambda}
+
+\newcommand{\hea}{\(\,^4\mathrm{He}\,\)}
+\newcommand{\heplus}{\(\mathrm{He}^+\,\)}
+
+\newcommand{\ev}{\,\mathrm{eV}}
+
+\section{}
+
+Imagine that at the time of recombination, the baryonic portion of the universe consisted entirely of \hea (that is, helium with two protons and two neutrons in its nucleus). The ionization energy of helium (that is, the energy required to convert neutral He to \heplus) is \(Q_{He} = 24.6 \,\mathrm{eV}\). At what temperature would the fractional ionization of the helium be \(X = 1/2\)? Assume that the baryon number density to photon number density  is \(\eta = 5.5 \times 10^{-10}\) and that the number density of \(\mathrm{He}^{++}\) is negligibly small. Note: the relevant statistical weight factor for the ionization of helium is \(g_{\mathrm{He}}/(g_e g_{\mathrm{He}^+}) = 1/4\)
+
+\section{}
+
+We know from observations that the intergalactic medium is currently ionized. Thus, at some time \(t_{*}\) between the time of recombination, \(t_{r}\), and now, \(t_0\), the the intergalactic medium must have reionized. The fact that we can see small fluctuations in the CMB places limits on how early the reionization took place.
+
+Assume that the baryonic component of the universe instantaneously became completely reionized at time \(t_*\). For what value of \(t_*\) does the optical depth of reionized material,
+
+\[ \tau = \int\limits_{t_e}^{t_0}\Gamma (t)dt = \int\limits_{t_e}^{t_0} n_e(t)\sigma _e(t)cdt,
+\]
+
+equal one? For simplicity, assume that the universe is spatially flat and matter dominated, and that the baryonic component of the universe is pure hydrogen. To what redshift \(z_*\) does \(t_*\) correspond?
+
+\section{}
+
+The program CMBFAST was developed by U. Zeljak and M. Zaldarriaga to predict the anisotropies of the CMB given the properties of the inhomogeneities of the universe at the surface of last scattering and the other parameters that describe the universe. It is the program used by most professionals for this purpose. It integrates over the sources of radiation along each line of sight, taking into account the geometry and expansion of the universe.
+
+This first column of the data output is the power spectrum of intensity fluctuations in the CMB (the \(C_\ell\)'s) as a function of the multipole order \(\ell\). Also predicted is the polarization of the CMB, though we will not consider polarization in this assignment.
+
+Recently, CMBFAST has been reincarnated as CAMB, a somewhat improved but slightly more complex version. A web interface to run CAMB is available at \\
+
+http://lambda.gsfc.nasa.gov/toolbox/tb\_camb\_form.cfm \\
+
+The interface allows you to set the parameters of the universe and run CAMB. It outputs plots and tables of the predicted power spectrum. The spectrum for intensity fluctuations is \(C_\ell^{TT}\) (this is the temperature data measured by WMAP). Most of the input parameters can utilize their default values, but we will change a few for this assignment.
+
+Change the following settings from their defaults:
+
+\begin{align*}
+\mathrm{Use\,Physical\,Parameters} &= \mathrm{No} \\
+\Omega_b &= 0.0456 \\
+\Omega_{cdm} &= 0.228 \\
+\Omega_\Lambda &= 0.726 \\
+\Omega_{neutrino} &= 0.0 \\
+H_0 &= 70 \\
+T_{CMB} &= 2.725 \\
+Y_{He}&=0.24 \\
+N_\nu \mathrm{(massless)} &= 3.04 \\
+N_\nu  \mathrm{(massive)} &= 0.0 \\
+\mathrm{Use\,Optical\,Depth?} &= \mathrm{Yes} \\
+\mathrm{Optical\,Depth\,to\,lss} &= 0.084 \\
+\end{align*}
+
+\textbf{there doesn't seem to be a question statement here}
+
+
+\end{document}
