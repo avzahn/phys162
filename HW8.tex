@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{textcomp}
+
+
+\usepackage{gensymb}
+
+\begin{document}
+
+\newcommand{\mpc}{\mathrm{Mpc}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\solarmass}{M_{\odot}}
+\newcommand{\s}{\mathrm{sec}}
+\newcommand{\is}{\sec^{-1}}
+\newcommand{\ikm}{\km^{-1}}
+\newcommand{\impc}{\mpc^{-1}}
+
+\newcommand{\reh}{r_\mathrm{eh}}
+\newcommand{\rh}{t_\mathrm{h}}
+\newcommand{\el}{\epsilon_\Lambda}
+
+\newcommand{\hea}{\(\,^4\mathrm{He}\,\)}
+\newcommand{\heplus}{\(\mathrm{He}^+\,\)}
+
+\newcommand{\ev}{\,\mathrm{eV}}
+
+\newcommand{\mean}[1]{\left< #1\right>}
+\newcommand{\ct}{\(C(\theta)\,\)}
+
+The small anisotropies in the CMB are a rich source of information on the properties of the universe. This assignment explores how this information is extracted from the observed map of CMB intensity as a function of position on the sky and then interpreted in terms of values for parameters of a model for the universe.
+
+The files for this assignment give the antenna temperatures for either real WMAP data or for similar artificial data. All antenna temperatures are given in milliKelvins. Each file contains data for a complete ring around the sky along a line of constant galactic latitude, and the spacing between the points is about \(0.139^\circ\) on the sky. The files have 2048 points and each line is a separate point. The first number on the line is the angular displacement of the point around the ring in degrees (starting at 0). The second is the antenna temperature (with the mean and possibly other quantities subtracted---see below). The third, when present, is the estimated uncertainty in the antenna temperature due to noise in the measurements.
+
+The data measured by WMAP are at a frequency of 60 GHz and along a ring in the sky with a galactic latitude of about \(38^\circ\). These data are average results for the first five years of WMAP observations. Actually, what is listed in the file is a modified antenna temperature. First, the mean temperature, which we will assume to be 2725 mK, has been subtracted. Second, both the dipole variation and a model for the contamination by galactic foreground emission have been subtracted (see lambda.gsfc.nasa.gov/product/foreground for more details), leaving just the anisotropies imposed (principally) at the epoch of decoupling.
+
+Three files of WMAP data are given, one for a ring at \(38^\circ\) galactic latitude, and two more for rings at \(38^\circ \pm 0.6^\circ\). Notice that this \(0.6^{\circ}\) offset is about twice the WMAP beam width at 60 GHz, so the three data sets are independent.
+
+Another file gives a set of artificial antenna temperatures with a simple sinusoidal variation with location on the sky. The number of points and format of the file is the same as for the WMAP data, except that no uncertainties are given. Again, the antenna temperatures quoted are modified as above.
+
+Finally, two files contain artificial data resembling the central WMAP ring, but containing artifical data that consists of Gaussian random numbers with a root-mean-square (rms) dispersion equal to the measurement uncertainties of the WMAP data. The second file is the same as the first, but has been smoothed with the WMAP beam at 60 GHz. In particular, each pixel was combined with its six nearest neighbors using the weights (0.0091,0.0500,0.2340,0.4138,0.2340,0.0500,0.0091).
+
+\textbf{1} Plot the three sets of WMAP data as a function of position along the ring. Connect the points with lines. The strings of data extend through \(284^\circ\) because they are along a small circle near a latitude of \(38^\circ\) (\(360^\circ  \times \cos(~38^\circ) \approx 284^\circ\)). Make the three plots for full range of angles available and also for the first 25 degrees. It is easier to see the individual measurements in the latter plot. Can you visually detect any correlations between the three data sets with the plots? In other words, do the temperatures appear to vary in the same way along different rings?
+
+\textbf{2} Do the above for the three artificial data sets.
+
+\textbf{3} For each WMAP data set, calculate the mean antenna temperature \(\mean{T}\), the rms variation about the mean \(\sqrt{\mean{ (T-\mean{T})^2 }}\), and the rms fractional temperature deviation \(\sqrt{\mean{ \left(\frac{T-\mean{T}}{T+T_{0}}\right)^2 }}\), where \(T_0\) is the mean temperature of 2725 mK that is subtracted away from the data files. 
+
+How do the three values compare to each other? How do the three rms variations compare with a typical measurement uncertainty quoted in the data files?
+
+\textbf{4} Do everything in 3 for the three artificial data sets.
+
+\textbf{5} Most of the information contained in the CMB anisotropies comes from the average amplitude of the fluctuations as a function of angular scale. This information is contained in the angular correlation function defined by Ryden equation 9.46:
+
+\[ C(\theta) = \mean{\frac{\delta T}{T}(\hat{n})\frac{\delta T}{T}(\hat{n}')}_{\hat{n}\cdot\hat{n}'=\cos(\theta)}
+\]
+
+Here the average is over all of the pairs of points on the sky with angular separations of \(\theta\). Use the sinusoidal data to calculate \ct using all of the pairs of points in a ring with locations \((i,i+2)\), which are separated by \(\theta \approx 0.28^\circ\). Repeat for the pairs \((i,i+4)\), separated by about 0.55 degress, and for pairs separated by 6,8,10,12,14,16, and 20 (that is, on up to a final separation of 2.77 degrees). Plot your \ct against \(\theta\). You should confirm that \ct varies sinusoidally with the same period as the artificial data.
+
+Explain the behavior of \ct using the sinusoidal variation of antenna temperature. A perfect correlation between pairs of points would result in a value of \ct equal to the square of the rms (not fractional) deviation about the mean found in question 4. A perfect anticorrelation would have the negative of this value. How strong are the strongest correlations and anticorrelations seen in your \ct in units of the maximum possible values?
+
+\textbf{6} Compute \ct for the Gaussian-random artificial, non-smoothed data, but with separations 1,2,3,4,5,6,7,8,9,10,15,20,30, and 40. Plot \ct against \(\theta\). Discuss the difference between this new \ct and the \ct found in 5.
+
+\textbf{7} Repeat the calculation and plot of \ct from 6 for the smoothed gaussian data. Where does the maximum \ct occur and what is it in units of the maximum possible correlation? Explain what causes the difference between this \ct and the non-smoothed \ct.
+
+\textbf{8} Calculate \ct separately for each of the WMAP data sets using the separations in 6 and 7. Plot these \ct's together on a single plot. How well do your \ct's agree? The differences are an estimate of the statistical uncertainty in your estimate of \ct. Briefly discuss where this statistical uncertainty comes from.
+
+\textbf{9} Average your three WMAP \ct's and plot the average. The separations between the points are actually slightly different for the three data sets, but ignore this and just average each group of three points with nearly the same \(\theta\).
+
+Where does the maximum \ct occur and what is it in units of maximum possible correlation? How does this \ct compare with the published \ct averaged over the entire WMAP sky map?
+
+How does your averaged \ct compare with the \ct's found in 6 and 7? Explain the origin of this difference in as much detail as you can. In particular, discuss the evidence that the increasing values of the WMAP \ct for \( \theta < 1^\circ\) are not explainable solely by the angular resolution of the WMAP antennas.
+
+\textbf{10} The shape of the WMAP \ct reflects the angular size of the temperature fluctuations in the CMB caused by primordial energy density fluctuations at the time of decoupling. In particular, the shape of \ct is determined by the angular size of the particle horizon at the time of decoupling, which corresponds to the first peak in the angular power spectrum of \ct (see figure 9.6 in Ryden). Calculating the full power spectrum is beyond the scope of a homework set. However, because the temperature fluctuations on the angular scale of the first peak are dominant, we can approximate \ct for \(\theta\) below one degree with the function
+
+\[A\cos(\theta(360^\circ/W))
+\] 
+
+Here \(A\) is an amplitude that depends on the strength of the fluctuations in the antenna temperature and \(W/2\) is the full width at half maximum of the fluctuations. We can think of this as the dominant term in the spherical harmonic representation of \ct.
+
+Try adjusting \(A\) and \(W\) to produce the best match to the first seven points of your average WMAP \ct. How does your best value for \(W/2\) compare to the angular size corresponding to the first peak in the power spectrum?
+
+\end{document}
