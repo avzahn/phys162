@@ -7,17 +7,17 @@
 
 \begin{document}
 
-\newcommand{\mpc}{\mathrm{Mpc}}
-\newcommand{\km}{\mathrm{km}}
+\newcommand{\mpc}{\mathrm{Mpc}\,}
+\newcommand{\km}{\mathrm{km\,}}
 \newcommand{\solarmass}{M_{\odot}}
-\newcommand{\s}{\mathrm{s}}
-\newcommand{\is}{\sec^{-1}}
-\newcommand{\ikm}{\km^{-1}}
-\newcommand{\impc}{\mpc^{-1}}
+\newcommand{\s}{\mathrm{s}\,}
+\newcommand{\is}{\s^{-1}\,}
+\newcommand{\ikm}{\km^{-1}\,}
+\newcommand{\impc}{\mpc^{-1}\,}
 
 \newcommand{\reh}{r_\mathrm{eh}}
 \newcommand{\rh}{t_\mathrm{h}}
-\newcommand{\el}{\epsilon_\Lambda}
+\newcommand{\el}{\varepsilon_\Lambda}
 
 \setcounter{section}{7}
 
@@ -48,22 +48,22 @@ In the Sunyaev-Zeldovich effect, photons from the cosmic microwave background ra
 
 \subsection{} %1
 
-Show that the current proper distance to our particle horizon, defined as the most distant place we can see (in principle), for a matter dominated \(k=0\) universe with no cosmological constant, is \(r_h a_0 = 3ct_0\), where \(r_h\) is the comoving radial coordinate of the particle horizon, \(a_0\) is the scale factor today, and \(t_0\) is the present age of the universe. Thus, more and more distant regions of the universe ``enter" the horizon and become visible as time progresses. Why is the answer different from the naively expected result, \(ct_0\)?
+Show that the current proper distance to our particle horizon, defined as the most distant place we can see (in principle), for a matter dominated \(\kappa=0\) universe with no cosmological constant, is \(r_h a_0 = 3ct_0\), where \(r_h\) is the comoving radial coordinate of the particle horizon, \(a_0\) is the scale factor today, and \(t_0\) is the present age of the universe. Thus, more and more distant regions of the universe ``enter" the horizon and become visible as time progresses. Why is the answer different from the naively expected result, \(ct_0\)?
 
 \textit{Hint:} Light moves along ``null geodesics", defined as paths along which \(ds = 0\), and therefore in the FRW metric, light reaching us from a comoving coordinate \(r\) will obey
-\[0 = c^2dt^2-a(t)^2\frac{dr^2}{1-kr^2}.
+\[0 = c^2dt^2-a(t)^2\frac{dr^2}{1-\kappa r^2}.
 \]
 Replace \(a(t)\) with \( (t/t_0)^{2/3}a_0\) appropriate for this cosmology, separate the variables, and integrate from \(r=0\) to \(r_h\) and from \(t=0\) (the Big Bang) to \(t_0\) (today).
 
 \subsection{} %2
 
-For a \(k=0\) universe with \(\Omega_\Lambda = 1\), that at \(t=0\) already has a scale \(a_0\), find the comoving radial coordinate, \(\rh\), of galaxies that will be on the particle horizon (see 8.1) at a time \(t\) in the future. Show that in this case, \(\rh\) approaches a constant, \(c/(H_0a_0)\) and therefore galaxies beyond this \(\rh\) will never become visible.
+For a \(\kappa=0\) universe with \(\Omega_\Lambda = 1\), that at \(t=0\) already has a scale \(a_0\), find the comoving radial coordinate, \(\rh\), of galaxies that will be on the particle horizon (see 8.1) at a time \(t\) in the future. Show that in this case, \(\rh\) approaches a constant, \(c/(H_0a_0)\) and therefore galaxies beyond this \(\rh\) will never become visible.
 
 \textit{Hint:} Proceed as in 8.1, but now with \(a(t) = a_0e^{H_0t}\). Show why this \(a(t)\) is an exact solution of the Friedmann equations for the cosmological parameters above.
 
 \subsection{} %3
 
-\textbf{a.} For the same cosmology as in 8.2 (\(k=0\), \(\Omega_\Lambda = 1\)), find the comoving radius \(\reh\) of galaxies that will be on our \textbf{event horizon} at a time \(t\) in the future, i.e., galaxies with which we will be unable to communicate. In other words, light signals sent by us at time \(t\) will never reach those galaxies, light signals sent out by those galaxies at time \(t\) will never reach us, and therefore we will never see those galaxies as they appeared at time \(t\) and thereafter. Show that, in this case, \(\reh\) shrinks exponentially, and we thus lose the possibility of communication with more and more of our neighbors.
+\textbf{a.} For the same cosmology as in 8.2 (\(\kappa=0\), \(\Omega_\Lambda = 1\)), find the comoving radius \(\reh\) of galaxies that will be on our \textbf{event horizon} at a time \(t\) in the future, i.e., galaxies with which we will be unable to communicate. In other words, light signals sent by us at time \(t\) will never reach those galaxies, light signals sent out by those galaxies at time \(t\) will never reach us, and therefore we will never see those galaxies as they appeared at time \(t\) and thereafter. Show that, in this case, \(\reh\) shrinks exponentially, and we thus lose the possibility of communication with more and more of our neighbors.
 
 \textbf{b.} Assume that \(H_0 = 70\, \km\is\) and find, for such a universe (which approximates the actual world we live in), within how many years will the galaxies in the Virgo cluster (distance  \(\sim 15\, \mpc\)) reach the event horizon.
 
@@ -75,15 +75,106 @@ Repeat the derivation of the third Friedmann equation, from the first and second
 
 \subsection{} %5
 
-Show that the equation of state associated with the energy density of the cosmological constant is \(P = -\epsilon_\Lambda\), with a negative pressure. Two different ways to do this are as follows. \newline
+Show that the equation of state associated with the energy density of the cosmological constant is \(P = -\varepsilon_\Lambda\), with a negative pressure. Two different ways to do this are as follows. \newline
 
-\textbf{a.} Invoke energy conservation and follow the derivation of Eqns 8.88-8.94 to argue that Eq 8.94 holds  also for the ``dark energy" density component \(\epsilon_\Lambda\), alone, i.e.,
+\textbf{a.} Invoke energy conservation and follow the derivation of Eqns 8.88-8.94 to argue that Eq 8.94 holds  also for the ``dark energy" density component \(\varepsilon_\Lambda\), alone, i.e.,
 
-\[\dot{\epsilon}_\Lambda = -3\frac{\dot{a}}{a}(\epsilon_\Lambda + P_\Lambda)
+\[\dot{\varepsilon}_\Lambda = -3\frac{\dot{a}}{a}(\varepsilon_\Lambda + P_\Lambda)
 \]
 
 The required result follows from noting \(\Lambda\) is a constant. \newline
 
-\textbf{b.} Rewrite the Friedmann equations plus cosmological constant (Eqns 8.95, 8.96, but absorb the \(\Lambda/3\) term, i.e., in Eq 8.95, define an energy density \(\epsilon_\Lambda\) (Eq 8.88) such that \(\rho\) is replaced by \(\rho + \el/c^2\). In Eq 8.96, replace  \(\rho c^2 + 3P\) with \(\rho c^2 + \el + 3(P+P_\Lambda) \) Then eliminate \(\Lambda\) from the two defining equations of \(\el\) and \(P_\Lambda\) to obtain the required dark energy equation of state.
+\textbf{b.} Rewrite the Friedmann equations plus cosmological constant (Eqns 8.95, 8.96, but absorb the \(\Lambda/3\) term, i.e., in Eq 8.95, define an energy density \(\\varepsilon_\Lambda\) (Eq 8.88) such that \(\rho\) is replaced by \(\rho + \el/c^2\). In Eq 8.96, replace  \(\rho c^2 + 3P\) with \(\rho c^2 + \el + 3(P+P_\Lambda) \) Then eliminate \(\Lambda\) from the two defining equations of \(\el\) and \(P_\Lambda\) to obtain the required dark energy equation of state.
+
+
+\setcounter{section}{9}
+\setcounter{subsection}{0}
+
+\section*{Chapter 9}
+
+\subsection{} %1
+
+In an accelerating or decelerating universe, the redshift \(z\) of a particular source will slowly change over time \(t_0\), as measured by an observer. \\
+
+
+(a) Show that the rate of change is
+\[\frac{dz}{dt_0} = (1+z)H_0-H(z)
+\]
+where \(H(z) \equiv \dot{a}(z)/a(z)\).
+
+\textit{Hint}: Differentiate with respect to \(t_0\) the redshift-scale factor relation, \(1+z = a(t_0)/a(t_e)\) where \(t_e\) is the time the redshifted light was emitted. Use the chain rule to deal with expressions such as \(da(t_e)/dt_0\).
+
+(b) Show that for a flat universe with \(\Lambda = 0\) that \(H(z) = H_0(1+z)^{3/2}\), For this model, and  assuming \(H_0 = 70\, \km\is\impc\), evaluate the change in redshift over ten years, for a source at \(z=1\), and the corresponding change in recession velocity.
+
+\subsection{} %2
+
+At a redshift \(z = 1100\), atoms were formed, the opacity of the universe to radiation via electron scattering disappeared, and the cosmic microwave background was formed. Imagine a world in which atoms cannot form. Even though such a universe, by definition, will remain ionized forever, after enough time the density will decline sufficiently to make the universe transparent nonetheless.
+
+Find the redshift at which this would have happened, for a flat universe with \(\Lambda=0\).
+
+Assume an all hydrogen composition, \(\Omega_B = .04\), and \(H_0 = 70\,\km\is\impc\). Note that this calculation is not so far fetched. Following recombination to atoms at \(z=1100\), most of the gas in the universe was reionized sometime between \(z=6\) and \(z=20\) (probably by the first massive stars that formed), and has remained ionized to this day. Despite this fact, opacity due to electron scattering is very low, and our view is virtually uninhibited out to high redshifts.
+
+\textit{Hint}: Transparency to electron scattering can be defined in several ways. One definition is to require that the rate at which is a photon is scattered by electrons, \(n_e\sigma_T c\), is lower than the expansion rate of the universe at that time, \(H(t)\). In other words, the time a photon takes to traverse its mean free path is longer than the age of universe at that time. We say that photons are decoupled from free electrons at this point.
+
+Express the electron density \(n_e\) at a given \(z\) by starting with the current baryon number density, \(\Omega_m \rho_c /m_p\), expressing \(\rho_c\) in terms of \(H_0\), and increasing the density in the past as \((1+z)^3\). Similarly, write \(H\) in terms of \(H_0\) and \(1+z\) (recall that \( 1+z = a_0/a\), and in this cosmology, \(a \propto t^{2/3}\) and \(H \propto t^{-1}\)). Show that decoupling would have occurred at 
+
+\[ 1+z = \left( \frac{8\pi G m_p}{3 \Omega_m H_0 \sigma_T c} \right)^{2/3}
+\]
+
+and calculate the value of this redshift. Alternatively, we can find the redshift of the surface of last scattering, from which a typical photon would have reached us without further scatters. The number of scatters on electrons that photon undergoes as it travels from redshift \(z\) to redshift zero is
+
+\[ \int\limits_0^{l(z)} n_e(z)\sigma_t dl
+\]
+
+Express \(n_e\), above, in terms of \(\Omega_m\), \(H_0\), and \(1+z\), replace \(dl\) with \( c(dt/dz)dz \), using again \(a \propto t^{2/3}\) to write \(dt/dz\) in terms of \(H_0\) and \(1+z\). Equate the integral to 1, perform the integration, show that the last scattering surface redshift would be
+
+\[1+z = \left( \frac{4\pi G m_p}{\Omega_m H_0 \sigma_T c}\right)^{2/3}
+\]
+
+and evaluate it.
+
+\subsection{} % 3
+
+Show that the angular diameter distance for a flat universe out to redshift \(z\),
+
+\[ d_A = 3ct_0\left( (1+z)^{-1} - (1-z)^{-3/2} \right)
+\]
+
+has a maximum with respect to redshift, and find that redshift.
+
+The angular size on the sky of an object with physical size \(d\) is \(\theta=d/d_A\). What is the implication of the maximum of \(d_A\) for the appearance of objects at redshifts beyond the one you found? Not that this peculiar behavior is simply the result of light travel time out to different distances in an expanding universe; an object at high redshift may have been closer to us at the time of emission than an object of the same size at a lower redshift, despite the fact that the high-redshift object is currently more distant.
+
+
+\subsection{} %4
+
+\textbf{a.} Consider the energy flux of photons from a source with bolometric luminosity \(L\) and with proper distance a\(a_0r\). The photons will be spread over an area \(4\pi a_0^2r^2\). Explain why the observed energy flux will be
+
+\[ f = \frac{L}{4\pi a_0^2r^2(1+z)^2}
+\]
+
+\textbf{b.} Find \(d_L\) for a flat universe with \(\Lambda=0\). Plot, for this model, the Hubble diagram ( flux vs \(z\) for an object of constant luminosity).
+
+\subsection{} % 5
+
+Show that in a Euclidean, non-expanding, universe, the surface brightness of an object (its observed flux per unit solid angle) does not change with distance. Then show that in an expanding FRW universe, the ratio between luminosity distance (see problem 4) and the angular diameter distance to an object is always \((1+z)^2\).
+
+Use this to prove that, in the latter universe, surface brightness dims with increasing redshift as \( (1+z)^{-4}\). This effect makes extended objects, such as galaxies, increasingly difficult to detect at high redshift.
+
+\subsection{} % 6
+
+An object at proper distance \(a_0r\) splits into two halves. Each piece moves relative to the other, perpendicular to our line of sight, at a constant, nonrelativistic velocity \(v\ll c\). What is the angular rate of separation, or ``proper motion" between the two objects?
+
+\textit{Hint:} Recall that we are measuring an angle, and so require the angular diameter distance, but we are also measuring a rate, which is affected by cosmological time dilation. You can now see why \(a_0r\) is called the proper-motion distance.
+
+\subsection{} % 7
+
+Use the Friedmann equation with a nonzero \(\Lambda\) to show that, in a flat, matter dominated universe, the proper distance is
+
+\[ a_0r = \int \frac{cdz}{H_0\sqrt{\Omega_{m,0}(1+z)^3+\Omega_{\Lambda,0}}}
+\]
+
+Use a computer to evaluate this integral numerically with \(\Omega_{\Lambda,0} = 0.7\) and \(\Omega_{m,0}=0.3\) for values of \(z\) between 0 and 2. Plot the Hubble diagram (flux vs \(z\)) from an object of constant luminosity, in this case, and compare to the curve describing a constant \(\Omega_m = 1\) (see problem 4). You can now see how the Hubble diagram of type-1a supernovae can distinguish among cosmological models.
+
+\textit{Hint:} Set \(\kappa=0\) in the Friedmann equation and replace \(\rho\) by \(\rho_0a_0^3/a^3\), divide both sides by \(H_0^2\), and substitute the dimensionless parameters \(\Omega_{m,0}\) and \(\Omega_{\Lambda,0}\). Change variables from \(a\) to \(z\) using \( 1+z = a_0/a\) and separate the variables \(z\) and \(t\). Finally, use the FRW metric with \(\kappa=0\) to get \(a_0r = \int(1+z)cdt\), to obtain the result. 
 
 \end{document}
