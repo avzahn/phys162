@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{graphicx}
+
+\usepackage{gensymb}
+\begin{document}
+
+\section{Recommended Reading}
+
+\begin{itemize}
+\item Ryden 11.1-11.4 inclusive (20 pages)
+\item Midterm 2 Solutions, starting from the acceleration equation question
+\end{itemize}
+
+\section{Cosmological Distances}
+
+\subsection{Proper Distance}
+
+Proper distance is defined in Ryden chapter three, although the most important formula we need is for the proper distance to a light source:
+
+\[ d_p = \int\limits_{t_e}^{t_0}\frac{dt}{a(t)}
+\]
+
+
+
+
+\subsection{Angular Diameter Distance}
+If two objects on the sky are separated by some distance \(l\) orthogonally to our line of sight and a (small) angle \(\delta \theta\), the angular diameter distance is the proper distance between us and either object if the universe is static and euclidean.
+
+\[ d_A = \frac{\ell}{\delta \theta}
+\]
+\subsection{Luminosity Distance}
+
+This is the proper distance to a light source of known luminosity \(L\) from which we have measured some flux \(f\), if the universe were static and euclidean
+
+\[ d_L = \left(\frac{L}{4\pi f}\right)^{1/2}
+\]
+
+An object for which we know the luminosity is called a standard candle.
+
+\section{Single Component, Nonempty Universes}
+
+\begin{itemize}
+\item \(\varepsilon=\varepsilon_0 a ^{-3(1+w)}\)
+\item \(a(t) =(t/t_0)^{2/(3-3w)}\) for \(w \ne -1\), else \(e^{H_0(t-t_0)}\)
+\end{itemize}
+
+
+
+\section{Multiple Component Universes}
+
+The most important thing is to recall from the last exam that the Friedmann equation has a very useful form:
+
+\[ \frac{H^2}{H_0^2} = \frac{\Omega_{r,0}}{a^4} + \frac{\Omega_{m,0}}{a^3} + \frac{1-\Omega_{0}}{a^2} +\Omega_{\Lambda,0}
+\]
+
+A universe that is ``dominated" by some component or components is one that is approximated as not having the others at all.
+
+The Benchmark Model for our universe has \(\Omega_{m,0} = 0.3\) (of which \(\Omega_{b,0} = 0.04\) and \(\Omega_{dm,0} = 0.26\)), \(\Omega_{\Lambda,0} = 0.7\), and \(\Omega_{r,0} = 8.4 \times 10^{-5}\).
+
+Also, note that we can still use
+
+\[\varepsilon_w=\varepsilon_{w,0} a ^{-3(1+w)}
+\]
+
+though now we have to consider the energy density of each species separately. This lends itself to a trick though for getting the temperature of the universe. As long as photons are in thermal equilibrium with the universe, you can use this formula to evolve the photon energy density backwards or forwards in time, and then use \(\varepsilon_\gamma \propto T^4\)
+
+
+\section{Evolutionary Epochs of the Universe}
+
+
+\subsection{Inflation }
+
+\begin{itemize}
+
+\item starts at roughly \(10^{-36}\) s and ends probably not later than \(10^{-32}\) s 
+
+\item Go read about this in 11.1-11.4
+
+\item Short summary is that we hypothesize a sudden increase and then decrease in \(\Lambda\), which gives us a period of extreme exponential growth in \(a(t)\), solving some cosmological problems.
+\end{itemize}
+
+\subsection{Nucleon Formation}
+
+\begin{itemize}
+\item Universe is radiation dominated, \(\varepsilon \propto T^4\). It will remain radiation dominated until approximately an age of forty seven thousand years.
+
+\item The first protons and neutrons form out of the primordial quark-gluon plasma, but the universe is too hot to form nuclei
+
+\item Ends when protons and neutrons decouple at \(t_{freeze}\) (about 1 s) and a temperature of 0.8 MeV
+
+
+\end{itemize}
+
+\subsection{Nucleosynthesis}
+
+\begin{itemize}
+\item Begins at a few seconds, lasts for of order hours
+\item  Finally cool enough to allow atomic nuclei to form (but not atoms). 
+\item nucleon-nuclei equilibrium driven by neutrino scatters
+\end{itemize}
+
+\subsection{Epoch of Recombination}
+
+\begin{itemize}
+\item Cool enough to form atoms
+\item atom-nuclei equilibrium driven by photoionization
+\item Matter dominated
+\item last scattering occurs at roughly \(z = 1100\)
+\item A useful parameter is the fractional ionization, \(X\), defined as the ratio of the number density of neutral atoms to the number density of free charges. An alternate formula for \(X\) is
+\[ n_{atoms} = \frac{1-X}{X}n_{protons}
+\]
+
+when we have a net charge neutral universe.
+\end{itemize}
+
+\section{CMB}
+
+\begin{itemize}
+\item Microwave radiation coming at us from every direction from the surface of last scattering
+\item The CMB is the wave of photons we see from the time when the density of the universe finally fell low enough to be transparent to photons.
+\item Will go over definition of \(C_{\ell}\). See Ryden equations 9.46 and 9.47
+\end{itemize}
+
+
+\section{A minimum of Statistical Mechanics}
+
+Suppose a nonrelativistic species \(x\) is in equilibrium, with number density \(n_x\) and mass \(m_x\). Then
+
+\[ n_x \propto g_x \left(\frac{m_x kT}{2\pi \hbar^2}\right)^{3/2}e^{-m_x c^2/kT}
+\]
+
+Ryden calls this the Maxwell-Boltzmann equation, and labels it 9.21. Suppose species \(a\) and \(b\) can combine to form \(c\). We can compute the ratio \(n_c/(n_a n_b)\) and define a ``binding energy" or, if we're dealing with the formation of atoms, an ``ionization energy", \(Q \equiv (m_a + m_b - m_c)c^2\). The result is called the Saha Equation for whatever system you're looking at.
+
+
+
+
+\section{Miscellaneous}
+
+\begin{itemize}
+\item Redshift and scale factor are always related by \(1+z = 1/a\) at all points in time.
+\item The critical density is 5200 MeV per cubic meter
+\item The Hubble time, \(1/H_0\), is the age of a universe that has always been linearly expanding.
+\item Some helpful energy scales:
+	\begin{itemize}
+	\item The ionization energy of hydrogen is 13.6 eV
+	\item Binding energy per nucleon: H-2 2.2, MeV He-4 7.07 MeV, Fe-56 8.8 MeV
+	\item The electron rest energy is 0.51 MeV. Neutrons and protons are about one thousand times heavier, with neutrons being heavier than protons by 1.3 MeV.
+	\end{itemize}
+\item The Hubble distance, \(c/H_0\), is the distance light can travel in a single Hubble time.
+\item If a question requires a number, formula, or previous answer that you don't have, just try to respond in terms of the missing unknowns.
+\end{itemize}
+
+\end{document}
